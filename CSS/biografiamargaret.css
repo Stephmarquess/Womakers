@@ -11,16 +11,22 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
+  
+}
+
+.scrollspy::-webkit-scrollbar {
+  display: none;
 }
 
 /* TEXTO */
 
 p {
   text-align: justify;
-  
+
 }
 
-h5,h4 {
+h5,
+h4 {
   text-align: left;
   align-self: self-start;
 }
@@ -35,11 +41,11 @@ strong {
   text-align: justify;
   color: black;
   display: block;
-}   
+}
 
 label {
 
-  margin:10px;
+  margin: 10px;
   font-size: 14px;
 
 }
@@ -55,21 +61,16 @@ h2 {
 
 }
 
-h4,h5 {
-
+h4 {
+  text-align: center;
+  font-size: 30px;
   font-weight: bold;
   margin: 20px 0px 15px 0px;
-
+  
 }
 
-h4 {   
-
-  background-color: black;
-  border-radius: 3px;
-  color: white; 
-  text-transform: uppercase; 
-  padding: 10px;  
-
+.nav-link a {
+  text-decoration: none;
 }
 
 /* FIM TEXTO */
@@ -89,18 +90,6 @@ h4 {
 
 }
 
-#navbar-example2 {
-
-      justify-content: center;
-      position: relative;
-
-}
-
-.nav-item {           
-
-  border-radius: 10px;
-  margin-right: 20px;
-}
 
 a {
 
@@ -110,28 +99,20 @@ a {
 
 a:hover {
 
-  color: black; 
+  color: black;
 
 }
 
 img {
 
-  width: 50%; 
+  width: 50%;
   border-radius: 10px;
-  margin-bottom: 10px;         
+  margin-bottom: 10px;
 }
 
-#navbarheader, #navbarfooter {            
-  background-color: #d1dede;
-}
 
-#navbarfooter  {
-  color: black;
-  display: flex; 
-  justify-content: space-evenly;
-}
 
-footer {
+header {
   background-color: #d1dede;
   display: flex;
   justify-content: center;
@@ -139,25 +120,50 @@ footer {
   text-align: center;
 }
 
-footer p {
-  text-align: center;
+footer {
+  background-color: #d1dede;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
 }
+
 
 #navbarfooter a {
   color: black;
 }
 
-#navbarheader .nav-item {
-
-  border-radius: 0;
-  border: none;
+.nav-link {
+  color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width:768px) {      
-
-.nav-item {           
-
-border-radius: 10px;
-margin-right: 5px;
+#navbar-scroll .active {
+  background-color: black;
+  color: white;
 }
+
+#navbar-scroll {
+  display: flex;
+}
+
+@media screen and (max-width:768px) {
+
+  .nav-item {
+
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width:424px) {
+
+  #navbar-scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.nav-item {
+  margin-top: 10px;
+}
+
 }

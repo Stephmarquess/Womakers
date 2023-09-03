@@ -10,7 +10,6 @@ body {
     font-family: 'Klee One', Arial, Helvetica, sans-serif;
     font-size: 12px;        
     width: 100%;   
-    margin-top: 50px;
     background-color: white;
     color: rgb(8, 8, 8);
     font-size: 16px;   
@@ -54,34 +53,22 @@ button:hover {
     color: rgb(250, 248, 248);    
 }
 
-.navbar {    
-    display: flex;
-    justify-content: space-evenly;    
-}
 
 .navbar a {
     color:black;
 }
 
-header {
-    display: flex;
-    color: black;
-    background-color: #D1DEDE;      
-    justify-content: space-around; 
-    position: fixed;    
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 
-#logo {
-    margin-top: 0;
+header {
+    background-color: #d1dede;
+  }
+
+#logo {    
     font-family: MonteCarlo;
     font-size: 40px;
 }
 
-#imgheader {
-    
+#imgheader {    
     width: 60%;
     height: 20%;
     margin-top: 30px;
@@ -116,11 +103,11 @@ header {
 }
 
 footer {
-display: flex;
-color: black;
-background-color: #D1DEDE;       
-justify-content: center;
-}
+    background-color: #d1dede;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+  }
 
 
 .janelafadeout {
@@ -233,6 +220,12 @@ footer li {
         margin-top: 30px;
     }
     
+}
+
+@media screen and (max-width: 990px) {      
+#navbarScroll {
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 768px) {      
