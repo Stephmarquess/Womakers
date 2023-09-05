@@ -6,13 +6,16 @@
 body {
     display: flex;
     flex-direction: column;    
-    text-align: center; 
+    text-align: justify; 
     font-family: 'Klee One', Arial, Helvetica, sans-serif;
-    font-size: 12px;        
-    width: 100%;   
+    font-size: 12px;            
     background-color: white;
-    color: rgb(8, 8, 8);
-    font-size: 16px;   
+    font-size: 16px;  
+    text-align: center; 
+}
+
+p {
+    text-align: justify;
 }
 
 a {
@@ -27,6 +30,7 @@ a {
     color: white;
     width: 100%;
     border-radius: 5px;
+    text-align: center;
 
 }
 
@@ -36,11 +40,6 @@ button {
     background-color: rgb(168, 83, 83);
     color: white;
     font-weight: bold;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
 }
 
 #botaoBio {
@@ -53,11 +52,9 @@ button:hover {
     color: rgb(250, 248, 248);    
 }
 
-
 .navbar a {
     color:black;
 }
-
 
 header {
     background-color: #d1dede;
@@ -68,33 +65,25 @@ header {
     font-size: 40px;
 }
 
-#imgheader {    
-    width: 60%;
-    height: 20%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .container {
     width: 100%;
     margin: auto;
 }
 
-.container img {
-    width: 30%;
-    border-radius: 10%;
-    height: 200px;
-}
 
-.link-area {
+/*.link-area {
     display: flex;
     margin-top: 20px;
     width: 100%;
     gap: 50px;    
 }
 
-.text-area {
-    text-align: justify;
+*/
+
+#links img {
+    width: 80%;
+    border-radius: 6px;
+    
 }
 
 .text-links p {
@@ -198,7 +187,7 @@ footer li {
 .galery-container .photos {
     flex: 20%;
     overflow: hidden;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .galery-container .photos img {
@@ -206,6 +195,7 @@ footer li {
     height: 80%;
     transition: 0.4s;
     border-radius: 10px;
+    
 }
 
 .galery-container .photos:hover img {
@@ -290,27 +280,11 @@ footer li {
 /* QUIZ */ 
 
 
-.janelafadeout {
-    margin: auto;
-    margin-top: 30px;
-}
-
 #conteudoquiz {
     display: flex;
     margin: auto;
-    flex-direction: column;    
-    height: 500px;    
-    width: 90%;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    
-  }
-
-  #conteudoquiz button {
-    background-color: #d1dede;
-    color: black;
-    border-radius: 10px;
-    margin-top: 10px;
+    flex-direction: column;          
+    margin-bottom: 10px;    
   }
   
   .spnQtd {
@@ -326,41 +300,31 @@ footer li {
     flex-direction: column;
 }
 
-#containerquiz {
-    margin: auto;
-    width: 80%;
+#containerquiz {    
+    padding: 10px;    
 }
 
 .question {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    text-align: center;        
-    font-size: 30px;    
+    text-align: left;
+    font-size: 25px; 
+    text-align: center;   
   }
    
-  #h21quiz {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 30px;
-    color: red;
-  }
-
   .answers {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;        
-    margin-top: 40px;
-  }
-
-  .answers button {
-    height: 80px;
-    width: 200px;
-  }
+    text-align: center;
+    
+  }  
   
   .finish {
     display: none;
-    font-size: 20px;
-    text-align: justify;
-    height: 300px;
+    font-size: 25px;        
     flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
   
   .finish button {
@@ -374,22 +338,9 @@ footer li {
     width: 80%;
   }
 
-.modal-content {
-
-    padding: 50px;
-    height: 600px;
-    overflow: scroll;
-    overflow-x: hidden;
+.modal-content {            
+    overflow-x: hidden;    
 }
-
-.modal-content img {
-    width: 60%;
-    height: 60%;
-    border-radius: 10px;
-    text-align: center;
-    margin: auto;
-}
-
 
 .modal-content label {
     margin: auto;
@@ -398,10 +349,9 @@ footer li {
 
 .modal-content p {
     text-align: justify;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
-
 
 .modal-content h2 {
     text-align: center;
@@ -410,9 +360,8 @@ footer li {
 
 .modal-content strong {
     margin-top: 15px;
-    text-transform: uppercase;
-    background-color: black;
-    color: white;
+    text-transform: uppercase;    
+    color: black;
 }
 
 .modal-content .citacao {
@@ -421,3 +370,4 @@ footer li {
     margin-bottom: 20px;
     font-weight: bold;    
 }
+

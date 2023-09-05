@@ -1,0 +1,15 @@
+#projetos {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 30%;
+    margin: auto;
+    border-radius: 6px;
+}
+
+label {
+    font-size: smaller;
+    margin-bottom: 10px;
+}

@@ -1,10 +1,10 @@
 export default [
   {
-    question: "O que Margaret desenvolveu no projeto SAGE?",
+    question: "Qual software a Margaret desenvolveu no projeto SAGE?",
     answers: [
-      { option: "Software para detecção de aeronaves inimigas", correct: true },
-      { option: "Software de Módulo Lunar", correct: false },
-      { option: "Software de Módulo de Comando", correct: false },
+      { option: "Detecção de aeronaves inimigas", correct: true },
+      { option: "Módulo Lunar", correct: false },
+      { option: "Módulo de Comando", correct: false },
     ],
   },
   {

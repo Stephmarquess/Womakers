@@ -34,7 +34,7 @@ function nextQuestion(e) {
 }
 
 function finish() {
-  textFinish.innerHTML = `Você acertou <strong> ${questionsCorrect} </strong> de ${questions.length}`;
+  textFinish.innerHTML = `Você acertou <strong> ${questionsCorrect} </strong> de ${questions.length} perguntas!`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
@@ -49,7 +49,7 @@ function loadQuestion() {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    <button class="answer" data-correct="${answer.correct}">
+    <button class="answer btn btn-outline-dark mt-3 shadow" data-correct="${answer.correct}">
       ${answer.option}
     </button>
     `;
